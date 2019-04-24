@@ -1,0 +1,13 @@
+<launch>
+    
+    <!--- Sim Time -->
+    <param name="/use_sim_time" value="true" />
+
+    <!--- Run Rviz (launch-prefix="nice" for lower cpu usage)-->
+    <node pkg="rviz" type="rviz" name="rviz" output="log" args="-d $(find bgk_traversability_mapping)/launch/rviz.rviz" />
+    
+    <!--- Run Traversability Mapping -->    
+    <node pkg="bgk_traversability_mapping" type="bgk_trav_filter"  name="bgk_trav_filter"  output="screen"/>
+    <node pkg="bgk_traversability_mapping" type="bgk_trav_map"     name="bgk_trav_map"     output="screen"/>
+
+</launch>
