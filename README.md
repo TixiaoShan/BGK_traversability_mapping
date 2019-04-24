@@ -18,7 +18,7 @@ cd ..
 catkin_make
 ```
 
-## Run the System (in simulation)
+## Run
 
 1. Run the launch file:
 ```
@@ -32,7 +32,7 @@ rosbag play *.bag --clock
 Notes: you need to proive the TF transformation between /map and /base_link.
 
 
-## Cite Our Paper
+## Cite
 
 Thank you for citing our paper if you use any of this code: 
 ```
